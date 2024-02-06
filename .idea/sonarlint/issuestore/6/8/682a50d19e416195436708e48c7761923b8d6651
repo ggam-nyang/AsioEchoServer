@@ -1,0 +1,4 @@
+
+;	cpp:S1763("'return' will never be executed(”·³›8¦²Òï×1
+^	cpp:S5962%"BConsider giving the thread a bigger scope instead of detaching it.(¨ÅšĞ8Ö²Òï×1
+R	cpp:S6168%"6Replace this use of "std::thread" with "std::jthread".(¨ÅšĞ8Ö²Òï×1
