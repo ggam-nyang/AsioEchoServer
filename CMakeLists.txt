@@ -14,5 +14,6 @@ if (Boost_FOUND)
 endif ()
 
 add_executable(boostAsio server.cpp)
-
 add_executable(client client.cpp)
+add_executable(syncClient1 daytime1/syncTCPClient.cpp)
+add_executable(syncServer1 daytime1/syncTCPServer.cpp)
