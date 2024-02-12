@@ -1,0 +1,16 @@
+
+e	cpp:S6229
+"DReplace this use of "time" with equivalent code using "std::chrono".(û¾´¥ûÿÿÿÿ8“ßíØÙ1
+;	cpp:S4962
+"Use the "nullptr" literal.(û¾´¥ûÿÿÿÿ8“ßíØÙ1
+k	cpp:S1912"OReplace this call to the non reentrant function "ctime" by a call to "ctime_r".(ŸúÉå8“ßíØÙ1
+m	cpp:S1911"QRemove use of this obsolete "ctime" function. Replace it by a call to "strftime".(ŸúÉå8“ßíØÙ1
+a	cpp:S6229"EReplace this use of "ctime" with equivalent code using "std::chrono".(ŸúÉå8“ßíØÙ1
+\	cpp:S5416";"using" should be preferred to "typedef" for type aliasing.(€˜âÿÿÿÿÿ8âÎêØÙ1
+R	cpp:S5950"6Use "std::make_shared" to construct "std::shared_ptr".(®èéØ8éÖôØÙ1
+N	cpp:S5995"2Replace this use of "bind" with "std::bind_front".(î©‡À8Ä„íØÙ1
+P	cpp:S1709%"/Add the "explicit" keyword to this constructor.(áç‹ïıÿÿÿÿ8ëÖôØÙ1
+z	cpp:S1186)"YAdd a nested comment explaining why this method is empty, or complete the implementation.(İ°ï›øÿÿÿÿ8ëÖôØÙ1
+E	cpp:S5817(")This function should be declared "const".(Ò®ç„8®öØÙ1
+P	cpp:S17091"/Add the "explicit" keyword to this constructor.(¤§ÏÈÿÿÿÿÿ8ãÎêØÙ1
+N	cpp:S5995?"2Replace this use of "bind" with "std::bind_front".(»¾©×8åÎêØÙ1

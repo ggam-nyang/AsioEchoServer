@@ -16,3 +16,7 @@ D
 daytime1/syncTCP.cpp,5/9/5943ea3afde870d340e6ac7a3638842bc0803530
 J
 daytime1/syncTCPServer.cpp,d/5/d514cbaab082b9552f64cfbd2a679fa0287b7257
+J
+daytime1/syncTCPClient.cpp,9/4/9422c0929ecc1d10d077e5273a6b3cd166ba3c79
+K
+daytime1/asyncTCPServer.cpp,c/7/c72329866745dba7a0413f61276c4d0440a1b5a8
