@@ -20,13 +20,13 @@ int main(int argc, char *argv[]) {
             std::array<char, 128> buf;
             boost::system::error_code error;
 
-            size_t len = socket.read_some(boost::asio::buffer(buf), error);
-            if (error == boost::asio::error::eof)
-                break; // Connection closed cleanly by peer.
-            else if (error)
-                throw boost::system::system_error(error); // Some other error.
+            std::string message;
+            std::cout << "Enter message: " << std::endl;
+            std::cin >> message;
+            socket.write_some(boost::asio::buffer(message), error);
 
-            std::cout.write(buf.data(), len);
+            size_t len = socket.read_some(boost::asio::buffer(buf), error);
+            if (error) throw boost::system::system_error(error); // Some other error.
         }
     }
     catch (std::exception &e) {

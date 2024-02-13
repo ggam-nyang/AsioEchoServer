@@ -1,2 +1,4 @@
 
+6	cpp:S1481"unused variable 'len'(ëä²Éøÿÿÿÿ8øİ¢•Ú1
+^	cpp:S1854"=Value stored to 'len' during its initialization is never read(ëä²Éøÿÿÿÿ8Íõ¢•Ú1
 9cpp:S125	"Remove the commented out code.(å‡ù¤8Ü¡ØÙ1

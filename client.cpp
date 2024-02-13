@@ -30,7 +30,7 @@ int main() {
 
     while (true) {
         std::string message;
-        std::cout << "Enter message: ";
+        std::cout << "Enter Message: ";
         std::cin >> message;
         sendData(socket_object, message);
         std::cout << "Server replied: " << getData(socket_object) << std::endl;
