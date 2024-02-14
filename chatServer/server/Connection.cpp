@@ -29,10 +29,10 @@ void Connection::writeMessage(const std::string &message) {
 }
 
 std::string Connection::readMessage() {
-    boost::asio::async_read(socket_, boost::asio::buffer(message_),
-                            std::bind(&Connection::handle_write, shared_from_this(),
-                                      boost::asio::placeholders::error,
-                                      boost::asio::placeholders::bytes_transferred));
+//    boost::asio::async_read(socket_, boost::asio::buffer(message_),
+//                            std::bind(&Connection::handle_write, shared_from_this(),
+//                                      boost::asio::placeholders::error,
+//                                      boost::asio::placeholders::bytes_transferred));
 
     return message_;
 }
