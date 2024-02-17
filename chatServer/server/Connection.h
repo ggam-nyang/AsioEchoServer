@@ -29,7 +29,7 @@ private:
     void handle_write(const boost::system::error_code & /*error*/, size_t /*bytes_transferred*/);
 
     boost::asio::ip::tcp::socket socket_;
-    std::string message_;
+    std::string buffer_;
 
     static const std::string kInputUserNameStr;
     static const std::string kGreetingStr;

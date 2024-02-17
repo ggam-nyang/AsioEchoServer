@@ -15,7 +15,7 @@ public:
 
     static void enter(User::pointer user);
     void leave(User::pointer user);
-    void writeMessage(const std::string &message);
+    void writeMessage(User::pointer sender, const std::string &message);
 
     std::set<User::pointer> users_;
 

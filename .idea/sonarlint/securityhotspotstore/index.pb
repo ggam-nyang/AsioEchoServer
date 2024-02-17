@@ -38,3 +38,9 @@ K
 chatServer/server/Lobby.cpp,6/a/6a87ad21e8a63db33a4e2cd0711cb7fdcbe9664c
 L
 chatServer/server/test.proto,5/b/5b0d9e2ced7be1dff09a72a0a46cd6a6838eab9b
+P
+ chatServer/client/clientMain.cpp,a/e/ae3e8dba2154e5a1210045a24bd2e85efacec450
+J
+chatServer/client/Client.h,e/a/eafa063c87c8d777acd0e320f170ba6415435092
+L
+chatServer/client/Client.cpp,d/4/d490f0d85766a32c9978777f9b767401e1d8b276

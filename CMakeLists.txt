@@ -4,6 +4,9 @@ project(boostAsio)
 set(CMAKE_CXX_STANDARD 20)
 
 find_package(Boost
+        COMPONENTS
+        thread
+        chrono
         REQUIRED
 )
 if (Boost_FOUND)
@@ -32,3 +35,8 @@ add_executable(chatServer1 chatServer/server/serverMain.cpp
         chatServer/server/User.cpp
         chatServer/server/User.h
 )
+add_executable(chatClient1 chatServer/client/clientMain.cpp
+        chatServer/client/Client.cpp
+        chatServer/client/Client.h)
+
+target_link_libraries(chatClient1 Boost::thread Boost::chrono)

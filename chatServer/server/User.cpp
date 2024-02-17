@@ -17,7 +17,7 @@ void User::start() {
 
 void User::readMessage() {
     std::string message = connectionPtr_->readMessage();
-    lobbyPtr_->writeMessage(message);
+    lobbyPtr_->writeMessage(shared_from_this(), message);
 }
 
 void User::writeMessage(const std::string &message) {

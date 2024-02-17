@@ -10,9 +10,9 @@ void Lobby::enter(User::pointer user) {
     user->writeMessage(kWelcomeString);
 }
 
-void Lobby::writeMessage(const std::string &message) {
-    for (const auto &user : users_) {
-        user->writeMessage(message);
+void Lobby::writeMessage(User::pointer sender, const std::string &message) {
+    for (const auto &user: users_) {
+        if (user != sender) user->writeMessage(message);
     }
 }
 
