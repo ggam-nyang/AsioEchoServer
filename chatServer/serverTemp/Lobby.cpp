@@ -4,7 +4,7 @@
 
 #include "Lobby.h"
 
-const std::string Lobby::kWelcomeString = "Welcome to the chat server!\n";
+const std::string Lobby::kWelcomeString = "Welcome to the chat serverTemp!\n";
 
 void Lobby::enter(User::pointer user) {
     user->writeMessage(kWelcomeString);

@@ -21,22 +21,17 @@ if (Protobuf_FOUND)
     include_directories(${Protobuf_INCLUDE_DIRS})
 endif ()
 
-add_executable(boostAsio server.cpp)
-add_executable(client client.cpp)
-add_executable(syncClient1 daytime1/syncTCPClient.cpp)
-add_executable(syncServer1 daytime1/syncTCPServer.cpp)
-add_executable(asyncServer1 daytime1/asyncTCPServer.cpp)
-add_executable(chatServer1 chatServer/server/serverMain.cpp
-        chatServer/server/Server.cpp
-        chatServer/server/Connection.cpp
-        chatServer/server/Connection.h
-        chatServer/server/Lobby.cpp
-        chatServer/server/Lobby.h
-        chatServer/server/User.cpp
-        chatServer/server/User.h
-)
-add_executable(chatClient1 chatServer/client/clientMain.cpp
+#add_executable(boostAsio server.cpp)
+#add_executable(client client.cpp)
+#add_executable(syncClient1 daytime1/syncTCPClient.cpp)
+#add_executable(syncServer1 daytime1/syncTCPServer.cpp)
+#add_executable(asyncServer1 daytime1/asyncTCPServer.cpp)
+add_executable(chatServer chatServer/server/serverMain.cpp)
+add_executable(chatClient chatServer/client/clientMain.cpp
         chatServer/client/Client.cpp
         chatServer/client/Client.h)
 
-target_link_libraries(chatClient1 Boost::thread Boost::chrono)
+target_link_libraries(chatServer ${Boost_LIBRARIES})
+target_link_libraries(chatClient ${Boost_LIBRARIES})
+#target_link_libraries(chatServer Boost::thread Boost::chrono)
+#target_link_libraries(chatClient Boost::thread Boost::chrono)
